@@ -13,7 +13,8 @@ CREATE TABLE public.movies (
 );
 
 COPY movies
-FROM '/Users/omaromeir/Documents/GitHub/agg_query_refinement/data/movies_clean.tsv'
+-- Local directory path
+FROM 'impact_and_comparative_summarization/data/movies.tsv'
 DELIMITER '|'
 CSV HEADER;
 
@@ -25,7 +26,8 @@ CREATE TABLE public.director (
 );
 
 COPY director
-FROM '/Users/omaromeir/Documents/GitHub/agg_query_refinement/data/directors.tsv'
+-- Local directory path
+FROM 'impact_and_comparative_summarization/data/directors.tsv'
 DELIMITER '|'
 CSV HEADER;
 
@@ -35,6 +37,7 @@ CREATE TABLE public.genre (
 );
 
 COPY genre
-FROM '/Users/omaromeir/Documents/GitHub/agg_query_refinement/data/genres.tsv'
+-- Local directory path
+FROM 'impact_and_comparative_summarization/data/genres.tsv'
 DELIMITER '|'
 CSV HEADER;
